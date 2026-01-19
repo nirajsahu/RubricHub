@@ -48,11 +48,11 @@ Existing rubrics often suffer from scalability bottlenecks and low discriminabil
 ## 📊 RubricHub Dataset
 RubricHub contains approximately **110k** high-quality query-rubric pairs across five major domains:
 
-*   **🏥 Medical:** 27.1% (e.g., HealthBench, LLMEval-Med)
-*   **🔬 Science:** 27.1% (e.g., ResearchQA, GPQA)
-*   **📝 Instruction Following:** 20.9% (e.g., IFEval)
-*   **✍️ Writing:** 15.9% (e.g., WritingBench)
-*   **💬 Chat:** 9.0% (e.g., Arena-Hard)
+*   **🏥 Medical:** 27.1%
+*   **🔬 Science:** 27.1% 
+*   **📝 Instruction Following:** 
+*   **✍️ Writing:** 15.9%
+*   **💬 Chat:** 9.0%
 
 The dataset features high-density supervision, with complex domains like Writing and Medical averaging over 30 fine-grained criteria per query.
 
@@ -64,6 +64,7 @@ We validated RubricHub using Qwen3 base models. The results demonstrate signific
 
 
 ## 🛠️ Usage
+*(Coming Soon)*
 
 ### Installation
 *(Coming Soon)*
@@ -84,7 +85,7 @@ If you find RubricHub useful for your research, please cite our paper:
 @article{li2026rubrichub,
   title={RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation},
   author={Li, Sunzhu and Zhao, Jiale and Wei, Miteto and Ren, Huimin and Zhou, Yang and Yang, Jingwen and Liu, Shunyu and Zhang, Kaike and Chen, Wei},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2601.08430},
   year={2026}
 }
 ```
