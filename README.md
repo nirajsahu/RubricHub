@@ -4,10 +4,10 @@
 
 <!-- You can add badges here later, e.g., ArXiv, License, HuggingFace -->
 <a href="https://arxiv.org/abs/2601.08430">
-    <img src="https://img.shields.io/badge/arXiv-25xx.xxxxx-b31b1b.svg" alt="arXiv"/>
+    <img src="https://img.shields.io/badge/arXiv-25xx.xxxxx-b31b1b.svg" alt="Paper"/>
 </a>
 <a href="https://huggingface.co/datasets/sojuL/RubricHub_v1">
-    <img src="https://img.shields.io/badge/Data-HuggingFace-yellow" alt="Data"/>
+    <img src="https://img.shields.io/badge/Data-HuggingFace-yellow" alt="Rubrichub"/>
 </a>
 <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"/>
