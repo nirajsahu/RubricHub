@@ -3,10 +3,18 @@
 <div align="center">
 
 <!-- You can add badges here later, e.g., ArXiv, License, HuggingFace -->
-[![arXiv](https://img.shields.io/badge/arXiv-25xx.xxxxx-b31b1b.svg)]([https://arxiv.org/abs/2601.08430])
-[![Data](https://img.shields.io/badge/Data-HuggingFace-yellow)]([https://huggingface.co/datasets/sojuL/RubricHub_v1])
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+<a href="https://arxiv.org/abs/2601.08430">
+    <img src="https://img.shields.io/badge/arXiv-25xx.xxxxx-b31b1b.svg" alt="arXiv"/>
+</a>
+<a href="https://huggingface.co/datasets/sojuL/RubricHub_v1">
+    <img src="https://img.shields.io/badge/Data-HuggingFace-yellow" alt="Data"/>
+</a>
+<a href="LICENSE">
+    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"/>
+</a>
+
 </div>
+
 
 ## 📢 News
 *   **[2026-01-19]** 🔥 **Code and Data Coming Soon!** We are preparing the release of the **data synthesis code** and the **post-training (RuFT & RuRL) code**. Stay tuned!
